@@ -1,0 +1,12 @@
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+project.xcworkspace
+xcuserdata
+tmp
+bin
+build
+*.zip
+.DS_Store
+*~

@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* JpMsmcTipaperfoldModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* JpMsmcTipaperfoldModule.h */; };
+		24DD6CFA1134B3F500162E58 /* JpMsmcTipaperfoldModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* JpMsmcTipaperfoldModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m */; };
+		316855C515D5F8B9004FFAAC /* FacingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855B715D5F8B9004FFAAC /* FacingView.h */; };
+		316855C615D5F8B9004FFAAC /* FacingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855B815D5F8B9004FFAAC /* FacingView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		316855C715D5F8B9004FFAAC /* FoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855B915D5F8B9004FFAAC /* FoldView.h */; };
+		316855C815D5F8B9004FFAAC /* FoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855BA15D5F8B9004FFAAC /* FoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		316855C915D5F8B9004FFAAC /* MultiFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855BB15D5F8B9004FFAAC /* MultiFoldView.h */; };
+		316855CA15D5F8B9004FFAAC /* MultiFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855BC15D5F8B9004FFAAC /* MultiFoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		316855CD15D5F8B9004FFAAC /* ShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855BF15D5F8B9004FFAAC /* ShadowView.h */; };
+		316855CE15D5F8B9004FFAAC /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855C015D5F8B9004FFAAC /* ShadowView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		316855CF15D5F8B9004FFAAC /* TouchThroughUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855C115D5F8B9004FFAAC /* TouchThroughUIView.h */; };
+		316855D015D5F8B9004FFAAC /* TouchThroughUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855C215D5F8B9004FFAAC /* TouchThroughUIView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		316855D115D5F8B9004FFAAC /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855C315D5F8B9004FFAAC /* UIView+Screenshot.h */; };
+		316855D215D5F8B9004FFAAC /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855C415D5F8B9004FFAAC /* UIView+Screenshot.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31E2264215D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264015D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h */; };
+		31E2264315D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264115D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m */; };
+		31E2264915D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264715D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h */; };
+		31E2264A15D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264815D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m */; };
+		31E2264F15D670B900B6F9E2 /* PaperFoldNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264B15D670B900B6F9E2 /* PaperFoldNavigationController.h */; };
+		31E2265015D670B900B6F9E2 /* PaperFoldNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264C15D670B900B6F9E2 /* PaperFoldNavigationController.m */; };
+		31E2265115D670B900B6F9E2 /* PaperFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264D15D670B900B6F9E2 /* PaperFoldView.h */; };
+		31E2265215D670B900B6F9E2 /* PaperFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264E15D670B900B6F9E2 /* PaperFoldView.m */; };
+		31E2265415D67B8100B6F9E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E2265315D67B8100B6F9E2 /* QuartzCore.framework */; };
+		AA747D9F0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = tipapaerfold;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* JpMsmcTipaperfoldModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldModule.h; path = Classes/JpMsmcTipaperfoldModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* JpMsmcTipaperfoldModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldModule.m; path = Classes/JpMsmcTipaperfoldModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldModuleAssets.h; path = Classes/JpMsmcTipaperfoldModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldModuleAssets.m; path = Classes/JpMsmcTipaperfoldModuleAssets.m; sourceTree = "<group>"; };
+		316855B715D5F8B9004FFAAC /* FacingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacingView.h; sourceTree = "<group>"; };
+		316855B815D5F8B9004FFAAC /* FacingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacingView.m; sourceTree = "<group>"; };
+		316855B915D5F8B9004FFAAC /* FoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldView.h; sourceTree = "<group>"; };
+		316855BA15D5F8B9004FFAAC /* FoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldView.m; sourceTree = "<group>"; };
+		316855BB15D5F8B9004FFAAC /* MultiFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFoldView.h; sourceTree = "<group>"; };
+		316855BC15D5F8B9004FFAAC /* MultiFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiFoldView.m; sourceTree = "<group>"; };
+		316855BF15D5F8B9004FFAAC /* ShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
+		316855C015D5F8B9004FFAAC /* ShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
+		316855C115D5F8B9004FFAAC /* TouchThroughUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchThroughUIView.h; sourceTree = "<group>"; };
+		316855C215D5F8B9004FFAAC /* TouchThroughUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchThroughUIView.m; sourceTree = "<group>"; };
+		316855C315D5F8B9004FFAAC /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		316855C415D5F8B9004FFAAC /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		31E2264015D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldPaperFoldViewProxy.h; path = Classes/JpMsmcTipaperfoldPaperFoldViewProxy.h; sourceTree = "<group>"; };
+		31E2264115D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldPaperFoldViewProxy.m; path = Classes/JpMsmcTipaperfoldPaperFoldViewProxy.m; sourceTree = "<group>"; };
+		31E2264715D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldPaperFoldView.h; path = Classes/JpMsmcTipaperfoldPaperFoldView.h; sourceTree = "<group>"; };
+		31E2264815D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldPaperFoldView.m; path = Classes/JpMsmcTipaperfoldPaperFoldView.m; sourceTree = "<group>"; };
+		31E2264B15D670B900B6F9E2 /* PaperFoldNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperFoldNavigationController.h; sourceTree = "<group>"; };
+		31E2264C15D670B900B6F9E2 /* PaperFoldNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperFoldNavigationController.m; sourceTree = "<group>"; };
+		31E2264D15D670B900B6F9E2 /* PaperFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperFoldView.h; sourceTree = "<group>"; };
+		31E2264E15D670B900B6F9E2 /* PaperFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperFoldView.m; sourceTree = "<group>"; };
+		31E2265315D67B8100B6F9E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA747D9E0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMsmcTipaperfold_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libJpMsmcTipaperfold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJpMsmcTipaperfold.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E2265415D67B8100B6F9E2 /* QuartzCore.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libJpMsmcTipaperfold.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* tipapaerfold */ = {
+			isa = PBXGroup;
+			children = (
+				316855B615D5F8B9004FFAAC /* PaperFold */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = tipapaerfold;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31E2265315D67B8100B6F9E2 /* QuartzCore.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				24DE9E0F11C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* JpMsmcTipaperfoldModule.h */,
+				24DD6CF81134B3F500162E58 /* JpMsmcTipaperfoldModule.m */,
+				31E2264015D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h */,
+				31E2264115D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m */,
+				31E2264715D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h */,
+				31E2264815D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		316855B615D5F8B9004FFAAC /* PaperFold */ = {
+			isa = PBXGroup;
+			children = (
+				31E2264B15D670B900B6F9E2 /* PaperFoldNavigationController.h */,
+				31E2264C15D670B900B6F9E2 /* PaperFoldNavigationController.m */,
+				31E2264D15D670B900B6F9E2 /* PaperFoldView.h */,
+				31E2264E15D670B900B6F9E2 /* PaperFoldView.m */,
+				316855B715D5F8B9004FFAAC /* FacingView.h */,
+				316855B815D5F8B9004FFAAC /* FacingView.m */,
+				316855B915D5F8B9004FFAAC /* FoldView.h */,
+				316855BA15D5F8B9004FFAAC /* FoldView.m */,
+				316855BB15D5F8B9004FFAAC /* MultiFoldView.h */,
+				316855BC15D5F8B9004FFAAC /* MultiFoldView.m */,
+				316855BF15D5F8B9004FFAAC /* ShadowView.h */,
+				316855C015D5F8B9004FFAAC /* ShadowView.m */,
+				316855C115D5F8B9004FFAAC /* TouchThroughUIView.h */,
+				316855C215D5F8B9004FFAAC /* TouchThroughUIView.m */,
+				316855C315D5F8B9004FFAAC /* UIView+Screenshot.h */,
+				316855C415D5F8B9004FFAAC /* UIView+Screenshot.m */,
+			);
+			path = PaperFold;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* JpMsmcTipaperfoldModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h in Headers */,
+				316855C515D5F8B9004FFAAC /* FacingView.h in Headers */,
+				316855C715D5F8B9004FFAAC /* FoldView.h in Headers */,
+				316855C915D5F8B9004FFAAC /* MultiFoldView.h in Headers */,
+				316855CD15D5F8B9004FFAAC /* ShadowView.h in Headers */,
+				316855CF15D5F8B9004FFAAC /* TouchThroughUIView.h in Headers */,
+				316855D115D5F8B9004FFAAC /* UIView+Screenshot.h in Headers */,
+				31E2264215D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h in Headers */,
+				31E2264915D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h in Headers */,
+				31E2264F15D670B900B6F9E2 /* PaperFoldNavigationController.h in Headers */,
+				31E2265115D670B900B6F9E2 /* PaperFoldView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* tipapaerfold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "tipapaerfold" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tipapaerfold;
+			productName = tipapaerfold;
+			productReference = D2AAC07E0554694100DB518D /* libJpMsmcTipaperfold.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "tipapaerfold" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* tipapaerfold */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* tipapaerfold */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* JpMsmcTipaperfoldModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m in Sources */,
+				316855C615D5F8B9004FFAAC /* FacingView.m in Sources */,
+				316855C815D5F8B9004FFAAC /* FoldView.m in Sources */,
+				316855CA15D5F8B9004FFAAC /* MultiFoldView.m in Sources */,
+				316855CE15D5F8B9004FFAAC /* ShadowView.m in Sources */,
+				316855D015D5F8B9004FFAAC /* TouchThroughUIView.m in Sources */,
+				316855D215D5F8B9004FFAAC /* UIView+Screenshot.m in Sources */,
+				31E2264315D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m in Sources */,
+				31E2264A15D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m in Sources */,
+				31E2265015D670B900B6F9E2 /* PaperFoldNavigationController.m in Sources */,
+				31E2265215D670B900B6F9E2 /* PaperFoldView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* tipapaerfold */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/JpMsmcTipaperfold.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JpMsmcTipaperfold_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JpMsmcTipaperfold;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_OBJCPP_ARC_ABI = NO;
+				DSTROOT = /tmp/JpMsmcTipaperfold.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JpMsmcTipaperfold_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JpMsmcTipaperfold;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/JpMsmcTipaperfold.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JpMsmcTipaperfold_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JpMsmcTipaperfold;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/JpMsmcTipaperfold.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = JpMsmcTipaperfold_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = JpMsmcTipaperfold;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "tipapaerfold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "tipapaerfold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
