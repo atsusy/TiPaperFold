@@ -29,7 +29,42 @@ To use your module in code, you will need to require it.
 
 For example,
 
-	var paperfold = require('jp.msmc.tipaperfold');
+	var module = require('jp.msmc.tipaperfold');
+	var window = Ti.UI.createWindow();
+	
+	var leftView = Ti.UI.createView({
+		width:100,
+		backgroundColor:'red'
+	});
+	
+	var centerView = Ti.UI.createView({
+		backgroundColor:'yellow'
+	});
+	
+	var rightView = Ti.UI.createView({
+		width:300,
+		backgroundColor:'green'
+	})
+	
+	var paperfoldView = module.createPaperFoldView({
+		left:0,
+		top:0,
+		leftView:leftView,
+		centerView:centerView,
+		rightView:{
+			view:rightView,
+			foldCount:3,
+			pullFactor:0.9
+		}
+	});
+	
+	window.add(paperfoldView);
+	window.open();
+
+The module has createPaperView method. 
+Call the method with an object which has properties leftView,centerView,rightView.
+`leftView` and `centerView` must be an instance of view.
+`rightView` must be an object which has properties view,foldCount(option),pullFactor(option).å
 	
 LICENSE
 -------------------------
