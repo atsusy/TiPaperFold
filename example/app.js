@@ -52,6 +52,12 @@ paperFoldView.addEventListener("stateChanged", function(e){
 	Ti.API.info("state changed to:"+e.state+" automated:"+e.auto);
 });
 
+leftView.addEventListener('click', function(e){
+	paperFoldView.centerView = Ti.UI.createView({
+		backgroundColor:'black'
+	});
+});
+
 window.add(paperFoldView);
 window.open();
 

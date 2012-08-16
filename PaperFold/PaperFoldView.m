@@ -68,8 +68,17 @@ CGFloat const kRightViewUnfoldThreshold = 0.3;
 
 - (void)setCenterContentView:(UIView*)view
 {
+    if(self.centerView)
+    {
+        [self.centerView removeFromSuperview];
+    }
+    
     [view setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth];
+    [view setFrame:self.frame];
+    
     [self.contentView addSubview:view];
+
+    self.centerView = view;
 }
 
 - (void)setLeftFoldContentView:(UIView*)view

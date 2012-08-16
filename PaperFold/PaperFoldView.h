@@ -62,6 +62,8 @@ typedef enum
 // timer to animate folds after gesture ended
 // manual animation with NSTimer is required to sync the offset of the contentView, with the folding of views
 @property (nonatomic, strong) NSTimer *animationTimer;
+// the view on the center
+@property (nonatomic, strong) UIView *centerView;
 // the fold view on the left
 @property (nonatomic, strong) FoldView *leftFoldView;
 // the multiple fold view on the right
