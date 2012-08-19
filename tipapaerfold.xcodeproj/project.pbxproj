@@ -26,26 +26,26 @@
 		24DD6CFA1134B3F500162E58 /* JpMsmcTipaperfoldModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* JpMsmcTipaperfoldModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h */; };
 		24DE9E1211C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m */; };
-		316855C515D5F8B9004FFAAC /* FacingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855B715D5F8B9004FFAAC /* FacingView.h */; };
-		316855C615D5F8B9004FFAAC /* FacingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855B815D5F8B9004FFAAC /* FacingView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		316855C715D5F8B9004FFAAC /* FoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855B915D5F8B9004FFAAC /* FoldView.h */; };
-		316855C815D5F8B9004FFAAC /* FoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855BA15D5F8B9004FFAAC /* FoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		316855C915D5F8B9004FFAAC /* MultiFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855BB15D5F8B9004FFAAC /* MultiFoldView.h */; };
-		316855CA15D5F8B9004FFAAC /* MultiFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855BC15D5F8B9004FFAAC /* MultiFoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		316855CD15D5F8B9004FFAAC /* ShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855BF15D5F8B9004FFAAC /* ShadowView.h */; };
-		316855CE15D5F8B9004FFAAC /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855C015D5F8B9004FFAAC /* ShadowView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		316855CF15D5F8B9004FFAAC /* TouchThroughUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855C115D5F8B9004FFAAC /* TouchThroughUIView.h */; };
-		316855D015D5F8B9004FFAAC /* TouchThroughUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855C215D5F8B9004FFAAC /* TouchThroughUIView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
-		316855D115D5F8B9004FFAAC /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 316855C315D5F8B9004FFAAC /* UIView+Screenshot.h */; };
-		316855D215D5F8B9004FFAAC /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 316855C415D5F8B9004FFAAC /* UIView+Screenshot.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99215E1B2060049D2C3 /* FacingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98215E1B2060049D2C3 /* FacingView.h */; };
+		31BEF99315E1B2060049D2C3 /* FacingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98315E1B2060049D2C3 /* FacingView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99415E1B2060049D2C3 /* FoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98415E1B2060049D2C3 /* FoldView.h */; };
+		31BEF99515E1B2060049D2C3 /* FoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98515E1B2060049D2C3 /* FoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99615E1B2060049D2C3 /* MultiFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98615E1B2060049D2C3 /* MultiFoldView.h */; };
+		31BEF99715E1B2060049D2C3 /* MultiFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98715E1B2060049D2C3 /* MultiFoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99815E1B2060049D2C3 /* PaperFoldNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98815E1B2060049D2C3 /* PaperFoldNavigationController.h */; };
+		31BEF99915E1B2060049D2C3 /* PaperFoldNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98915E1B2060049D2C3 /* PaperFoldNavigationController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99A15E1B2060049D2C3 /* PaperFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98A15E1B2060049D2C3 /* PaperFoldView.h */; };
+		31BEF99B15E1B2060049D2C3 /* PaperFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98B15E1B2060049D2C3 /* PaperFoldView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99C15E1B2060049D2C3 /* ShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98C15E1B2060049D2C3 /* ShadowView.h */; };
+		31BEF99D15E1B2060049D2C3 /* ShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98D15E1B2060049D2C3 /* ShadowView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF99E15E1B2060049D2C3 /* TouchThroughUIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF98E15E1B2060049D2C3 /* TouchThroughUIView.h */; };
+		31BEF99F15E1B2060049D2C3 /* TouchThroughUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF98F15E1B2060049D2C3 /* TouchThroughUIView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		31BEF9A015E1B2060049D2C3 /* UIView+Screenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BEF99015E1B2060049D2C3 /* UIView+Screenshot.h */; };
+		31BEF9A115E1B2060049D2C3 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BEF99115E1B2060049D2C3 /* UIView+Screenshot.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		31E2264215D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264015D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h */; };
 		31E2264315D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264115D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m */; };
 		31E2264915D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264715D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h */; };
 		31E2264A15D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264815D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m */; };
-		31E2264F15D670B900B6F9E2 /* PaperFoldNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264B15D670B900B6F9E2 /* PaperFoldNavigationController.h */; };
-		31E2265015D670B900B6F9E2 /* PaperFoldNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264C15D670B900B6F9E2 /* PaperFoldNavigationController.m */; };
-		31E2265115D670B900B6F9E2 /* PaperFoldView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E2264D15D670B900B6F9E2 /* PaperFoldView.h */; };
-		31E2265215D670B900B6F9E2 /* PaperFoldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E2264E15D670B900B6F9E2 /* PaperFoldView.m */; };
 		31E2265415D67B8100B6F9E2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E2265315D67B8100B6F9E2 /* QuartzCore.framework */; };
 		AA747D9F0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
@@ -67,26 +67,26 @@
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		24DE9E0F11C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldModuleAssets.h; path = Classes/JpMsmcTipaperfoldModuleAssets.h; sourceTree = "<group>"; };
 		24DE9E1011C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldModuleAssets.m; path = Classes/JpMsmcTipaperfoldModuleAssets.m; sourceTree = "<group>"; };
-		316855B715D5F8B9004FFAAC /* FacingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacingView.h; sourceTree = "<group>"; };
-		316855B815D5F8B9004FFAAC /* FacingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacingView.m; sourceTree = "<group>"; };
-		316855B915D5F8B9004FFAAC /* FoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldView.h; sourceTree = "<group>"; };
-		316855BA15D5F8B9004FFAAC /* FoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldView.m; sourceTree = "<group>"; };
-		316855BB15D5F8B9004FFAAC /* MultiFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFoldView.h; sourceTree = "<group>"; };
-		316855BC15D5F8B9004FFAAC /* MultiFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiFoldView.m; sourceTree = "<group>"; };
-		316855BF15D5F8B9004FFAAC /* ShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
-		316855C015D5F8B9004FFAAC /* ShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
-		316855C115D5F8B9004FFAAC /* TouchThroughUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchThroughUIView.h; sourceTree = "<group>"; };
-		316855C215D5F8B9004FFAAC /* TouchThroughUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchThroughUIView.m; sourceTree = "<group>"; };
-		316855C315D5F8B9004FFAAC /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
-		316855C415D5F8B9004FFAAC /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		31BEF98215E1B2060049D2C3 /* FacingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacingView.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/FacingView.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98315E1B2060049D2C3 /* FacingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacingView.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/FacingView.m"; sourceTree = SOURCE_ROOT; };
+		31BEF98415E1B2060049D2C3 /* FoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoldView.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/FoldView.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98515E1B2060049D2C3 /* FoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoldView.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/FoldView.m"; sourceTree = SOURCE_ROOT; };
+		31BEF98615E1B2060049D2C3 /* MultiFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiFoldView.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/MultiFoldView.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98715E1B2060049D2C3 /* MultiFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiFoldView.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/MultiFoldView.m"; sourceTree = SOURCE_ROOT; };
+		31BEF98815E1B2060049D2C3 /* PaperFoldNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaperFoldNavigationController.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/PaperFoldNavigationController.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98915E1B2060049D2C3 /* PaperFoldNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaperFoldNavigationController.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/PaperFoldNavigationController.m"; sourceTree = SOURCE_ROOT; };
+		31BEF98A15E1B2060049D2C3 /* PaperFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaperFoldView.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/PaperFoldView.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98B15E1B2060049D2C3 /* PaperFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaperFoldView.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/PaperFoldView.m"; sourceTree = SOURCE_ROOT; };
+		31BEF98C15E1B2060049D2C3 /* ShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShadowView.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/ShadowView.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98D15E1B2060049D2C3 /* ShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShadowView.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/ShadowView.m"; sourceTree = SOURCE_ROOT; };
+		31BEF98E15E1B2060049D2C3 /* TouchThroughUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchThroughUIView.h; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/TouchThroughUIView.h"; sourceTree = SOURCE_ROOT; };
+		31BEF98F15E1B2060049D2C3 /* TouchThroughUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TouchThroughUIView.m; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/TouchThroughUIView.m"; sourceTree = SOURCE_ROOT; };
+		31BEF99015E1B2060049D2C3 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Screenshot.h"; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/UIView+Screenshot.h"; sourceTree = SOURCE_ROOT; };
+		31BEF99115E1B2060049D2C3 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Screenshot.m"; path = "PaperFold-for-iOS/PaperFold/PaperFold/PaperFold/UIView+Screenshot.m"; sourceTree = SOURCE_ROOT; };
 		31E2264015D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldPaperFoldViewProxy.h; path = Classes/JpMsmcTipaperfoldPaperFoldViewProxy.h; sourceTree = "<group>"; };
 		31E2264115D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldPaperFoldViewProxy.m; path = Classes/JpMsmcTipaperfoldPaperFoldViewProxy.m; sourceTree = "<group>"; };
 		31E2264715D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JpMsmcTipaperfoldPaperFoldView.h; path = Classes/JpMsmcTipaperfoldPaperFoldView.h; sourceTree = "<group>"; };
 		31E2264815D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JpMsmcTipaperfoldPaperFoldView.m; path = Classes/JpMsmcTipaperfoldPaperFoldView.m; sourceTree = "<group>"; };
-		31E2264B15D670B900B6F9E2 /* PaperFoldNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperFoldNavigationController.h; sourceTree = "<group>"; };
-		31E2264C15D670B900B6F9E2 /* PaperFoldNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperFoldNavigationController.m; sourceTree = "<group>"; };
-		31E2264D15D670B900B6F9E2 /* PaperFoldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperFoldView.h; sourceTree = "<group>"; };
-		31E2264E15D670B900B6F9E2 /* PaperFoldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperFoldView.m; sourceTree = "<group>"; };
 		31E2265315D67B8100B6F9E2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AA747D9E0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JpMsmcTipaperfold_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,22 +153,22 @@
 		316855B615D5F8B9004FFAAC /* PaperFold */ = {
 			isa = PBXGroup;
 			children = (
-				31E2264B15D670B900B6F9E2 /* PaperFoldNavigationController.h */,
-				31E2264C15D670B900B6F9E2 /* PaperFoldNavigationController.m */,
-				31E2264D15D670B900B6F9E2 /* PaperFoldView.h */,
-				31E2264E15D670B900B6F9E2 /* PaperFoldView.m */,
-				316855B715D5F8B9004FFAAC /* FacingView.h */,
-				316855B815D5F8B9004FFAAC /* FacingView.m */,
-				316855B915D5F8B9004FFAAC /* FoldView.h */,
-				316855BA15D5F8B9004FFAAC /* FoldView.m */,
-				316855BB15D5F8B9004FFAAC /* MultiFoldView.h */,
-				316855BC15D5F8B9004FFAAC /* MultiFoldView.m */,
-				316855BF15D5F8B9004FFAAC /* ShadowView.h */,
-				316855C015D5F8B9004FFAAC /* ShadowView.m */,
-				316855C115D5F8B9004FFAAC /* TouchThroughUIView.h */,
-				316855C215D5F8B9004FFAAC /* TouchThroughUIView.m */,
-				316855C315D5F8B9004FFAAC /* UIView+Screenshot.h */,
-				316855C415D5F8B9004FFAAC /* UIView+Screenshot.m */,
+				31BEF98215E1B2060049D2C3 /* FacingView.h */,
+				31BEF98315E1B2060049D2C3 /* FacingView.m */,
+				31BEF98415E1B2060049D2C3 /* FoldView.h */,
+				31BEF98515E1B2060049D2C3 /* FoldView.m */,
+				31BEF98615E1B2060049D2C3 /* MultiFoldView.h */,
+				31BEF98715E1B2060049D2C3 /* MultiFoldView.m */,
+				31BEF98815E1B2060049D2C3 /* PaperFoldNavigationController.h */,
+				31BEF98915E1B2060049D2C3 /* PaperFoldNavigationController.m */,
+				31BEF98A15E1B2060049D2C3 /* PaperFoldView.h */,
+				31BEF98B15E1B2060049D2C3 /* PaperFoldView.m */,
+				31BEF98C15E1B2060049D2C3 /* ShadowView.h */,
+				31BEF98D15E1B2060049D2C3 /* ShadowView.m */,
+				31BEF98E15E1B2060049D2C3 /* TouchThroughUIView.h */,
+				31BEF98F15E1B2060049D2C3 /* TouchThroughUIView.m */,
+				31BEF99015E1B2060049D2C3 /* UIView+Screenshot.h */,
+				31BEF99115E1B2060049D2C3 /* UIView+Screenshot.m */,
 			);
 			path = PaperFold;
 			sourceTree = "<group>";
@@ -192,16 +192,16 @@
 				AA747D9F0F9514B9006C5449 /* JpMsmcTipaperfold_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* JpMsmcTipaperfoldModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.h in Headers */,
-				316855C515D5F8B9004FFAAC /* FacingView.h in Headers */,
-				316855C715D5F8B9004FFAAC /* FoldView.h in Headers */,
-				316855C915D5F8B9004FFAAC /* MultiFoldView.h in Headers */,
-				316855CD15D5F8B9004FFAAC /* ShadowView.h in Headers */,
-				316855CF15D5F8B9004FFAAC /* TouchThroughUIView.h in Headers */,
-				316855D115D5F8B9004FFAAC /* UIView+Screenshot.h in Headers */,
 				31E2264215D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.h in Headers */,
 				31E2264915D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.h in Headers */,
-				31E2264F15D670B900B6F9E2 /* PaperFoldNavigationController.h in Headers */,
-				31E2265115D670B900B6F9E2 /* PaperFoldView.h in Headers */,
+				31BEF99215E1B2060049D2C3 /* FacingView.h in Headers */,
+				31BEF99415E1B2060049D2C3 /* FoldView.h in Headers */,
+				31BEF99615E1B2060049D2C3 /* MultiFoldView.h in Headers */,
+				31BEF99815E1B2060049D2C3 /* PaperFoldNavigationController.h in Headers */,
+				31BEF99A15E1B2060049D2C3 /* PaperFoldView.h in Headers */,
+				31BEF99C15E1B2060049D2C3 /* ShadowView.h in Headers */,
+				31BEF99E15E1B2060049D2C3 /* TouchThroughUIView.h in Headers */,
+				31BEF9A015E1B2060049D2C3 /* UIView+Screenshot.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,16 +274,16 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* JpMsmcTipaperfoldModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* JpMsmcTipaperfoldModuleAssets.m in Sources */,
-				316855C615D5F8B9004FFAAC /* FacingView.m in Sources */,
-				316855C815D5F8B9004FFAAC /* FoldView.m in Sources */,
-				316855CA15D5F8B9004FFAAC /* MultiFoldView.m in Sources */,
-				316855CE15D5F8B9004FFAAC /* ShadowView.m in Sources */,
-				316855D015D5F8B9004FFAAC /* TouchThroughUIView.m in Sources */,
-				316855D215D5F8B9004FFAAC /* UIView+Screenshot.m in Sources */,
 				31E2264315D604E600B6F9E2 /* JpMsmcTipaperfoldPaperFoldViewProxy.m in Sources */,
 				31E2264A15D66C4900B6F9E2 /* JpMsmcTipaperfoldPaperFoldView.m in Sources */,
-				31E2265015D670B900B6F9E2 /* PaperFoldNavigationController.m in Sources */,
-				31E2265215D670B900B6F9E2 /* PaperFoldView.m in Sources */,
+				31BEF99315E1B2060049D2C3 /* FacingView.m in Sources */,
+				31BEF99515E1B2060049D2C3 /* FoldView.m in Sources */,
+				31BEF99715E1B2060049D2C3 /* MultiFoldView.m in Sources */,
+				31BEF99915E1B2060049D2C3 /* PaperFoldNavigationController.m in Sources */,
+				31BEF99B15E1B2060049D2C3 /* PaperFoldView.m in Sources */,
+				31BEF99D15E1B2060049D2C3 /* ShadowView.m in Sources */,
+				31BEF99F15E1B2060049D2C3 /* TouchThroughUIView.m in Sources */,
+				31BEF9A115E1B2060049D2C3 /* UIView+Screenshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
