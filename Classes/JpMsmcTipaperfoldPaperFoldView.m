@@ -34,6 +34,9 @@
     CGRect r = [[viewProxy view] frame];
     
     [[self paperFoldView] setLeftFoldContentView:[viewProxy view]];
+    
+    [viewProxy windowWillOpen];
+    
     NSLog(@"[DEBUG] LeftFoldContentView set.");
 }
 
@@ -43,6 +46,9 @@
     ENSURE_SINGLE_ARG(viewProxy, TiViewProxy);
 
     [[self paperFoldView] setCenterContentView:[viewProxy view]];
+
+    [viewProxy windowWillOpen];
+
     NSLog(@"[DEBUG] CenterContentView set.");
 }
 
@@ -70,7 +76,9 @@
     [[self paperFoldView] setRightFoldContentView:[contentView view]
                                rightViewFoldCount:[foldCount integerValue]
                               rightViewPullFactor:[pullFactor floatValue]];
-    
+
+    [contentView windowWillOpen];
+
     NSLog(@"[DEBUG] RightFoldContentView set.");
 }
 
