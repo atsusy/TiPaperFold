@@ -53,7 +53,11 @@ var paperFoldView = module.createPaperFoldView({
 	left:0,
 	top:0,
 	centerView:centerView,
-	leftView:leftView,
+	leftView:{
+		view:leftView,
+		foldCount:2,
+		pullFactor:0.9
+	},
 	rightView:{
 		view:rightView,
 		foldCount:3,

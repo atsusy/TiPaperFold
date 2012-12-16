@@ -12,10 +12,15 @@
 @interface JpMsmcTipaperfoldPaperFoldView : TiUIView <PaperFoldViewDelegate>
 {
     PaperFoldView *paperFoldView;
+    
     UIView *leftView;
-    int foldCount;
-    float pullFactor;
+    int leftFoldCount;
+    float leftPullFactor;
+    
     UIView *centerView;
+    
     UIView *rightView;
+    int rightFoldCount;
+    float rightPullFactor;
 }
 @end

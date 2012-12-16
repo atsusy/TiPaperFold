@@ -26,15 +26,53 @@
     return paperFoldView;
 }
 
-- (void)setLeftView_:(id)viewProxy
+- (void)setLeftView_:(id)args
 {
-    ENSURE_UI_THREAD_1_ARG(viewProxy);
-    ENSURE_SINGLE_ARG(viewProxy, TiViewProxy);
+    TiViewProxy *viewProxy = nil;
     
+    ENSURE_UI_THREAD_1_ARG(args);
+
+    leftFoldCount = 1;
+    leftPullFactor = 1.0;
+    
+    if([args isKindOfClass:NSClassFromString(@"TiViewProxy")])
+    {
+        ENSURE_SINGLE_ARG_OR_NIL(args, TiViewProxy);
+        viewProxy = args;
+    }
+    else if([args isKindOfClass:NSClassFromString(@"NSDictionary")])
+    {        
+        ENSURE_ARG_OR_NIL_FOR_KEY(viewProxy, args, @"view", TiViewProxy);
+
+        NSNumber *foldCount, *pullFactor;
+
+        ENSURE_ARG_OR_NIL_FOR_KEY(foldCount, args, @"foldCount", NSNumber);
+        if(foldCount != nil)
+        {
+            leftFoldCount = [foldCount integerValue];
+        }
+        
+        ENSURE_ARG_OR_NIL_FOR_KEY(pullFactor, args, @"pullFactor", NSNumber);
+        if(pullFactor != nil)
+        {
+            leftPullFactor = [pullFactor floatValue];
+        }
+    }
+    else
+    {
+        NSLog(@"[ERROR] unsupported type for leftView.");
+    }
+
     RELEASE_TO_NIL(leftView);
+    if(viewProxy == nil)
+    {
+        NSLog(@"[WARN] leftView is nil.");
+        return;
+    }
     leftView = [[viewProxy view] retain];
     
-    [viewProxy windowWillOpen];    
+    [viewProxy windowWillOpen];
+    
     NSLog(@"[DEBUG] LeftFoldContentView set.");
 }
 
@@ -58,27 +96,20 @@
     TiViewProxy *viewProxy = nil;
     ENSURE_ARG_FOR_KEY(viewProxy, dict, @"view", TiViewProxy);
 
-    NSNumber *foldCount_;
-    ENSURE_ARG_OR_NIL_FOR_KEY(foldCount_, dict, @"foldCount", NSNumber);
-    if(foldCount_ == nil)
+    NSNumber *foldCount;
+    ENSURE_ARG_OR_NIL_FOR_KEY(foldCount, dict, @"foldCount", NSNumber);
+    rightFoldCount = 3;
+    if(foldCount != nil)
     {
-        foldCount = 3;
-    }
-    else
-    {
-        foldCount = [foldCount_ integerValue];
-    
+        rightFoldCount = [foldCount integerValue];
     }
 
-    NSNumber *pullFactor_;
-    ENSURE_ARG_OR_NIL_FOR_KEY(pullFactor_, dict, @"pullFactor", NSNumber);
-    if(pullFactor_ == nil)
+    NSNumber *pullFactor;
+    ENSURE_ARG_OR_NIL_FOR_KEY(pullFactor, dict, @"pullFactor", NSNumber);
+    rightPullFactor = 0.9;
+    if(pullFactor != nil)
     {
-        pullFactor = 0.9;
-    }
-    else
-    {
-        pullFactor = [pullFactor_ floatValue];
+        rightPullFactor = [pullFactor floatValue];
     }
     
     RELEASE_TO_NIL(rightView);
@@ -138,16 +169,16 @@
     {
         [leftView setFrame:CGRectMake(0.0, 0.0, leftView.frame.size.width, frame.size.height)];
         [[self paperFoldView] setLeftFoldContentView:leftView
-                                           foldCount:1
-                                          pullFactor:1.0];
+                                           foldCount:leftFoldCount
+                                          pullFactor:leftPullFactor];
     }
     
     if(rightView)
     {
         [rightView setFrame:CGRectMake(0.0, 0.0, rightView.frame.size.width, frame.size.height)];
         [[self paperFoldView] setRightFoldContentView:rightView
-                                            foldCount:foldCount
-                                           pullFactor:pullFactor];
+                                            foldCount:rightFoldCount
+                                           pullFactor:rightPullFactor];
     }
 
     if(centerView)
