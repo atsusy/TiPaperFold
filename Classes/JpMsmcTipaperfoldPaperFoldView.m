@@ -133,21 +133,29 @@
 - (void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
     [[self paperFoldView] setFrame:frame];
+        
+    if(leftView)
+    {
+        [leftView setFrame:CGRectMake(0.0, 0.0, leftView.frame.size.width, frame.size.height)];
+        [[self paperFoldView] setLeftFoldContentView:leftView
+                                           foldCount:1
+                                          pullFactor:1.0];
+    }
     
-    [leftView setFrame:CGRectMake(0.0, 0.0, leftView.frame.size.width, frame.size.height)];
-    [centerView setFrame:frame];
-    [rightView setFrame:CGRectMake(0.0, 0.0, rightView.frame.size.width, frame.size.height)];
+    if(rightView)
+    {
+        [rightView setFrame:CGRectMake(0.0, 0.0, rightView.frame.size.width, frame.size.height)];
+        [[self paperFoldView] setRightFoldContentView:rightView
+                                            foldCount:foldCount
+                                           pullFactor:pullFactor];
+    }
 
-    [[self paperFoldView] setLeftFoldContentView:leftView
-                                       foldCount:1
-                                      pullFactor:1.0];
+    if(centerView)
+    {
+        [centerView setFrame:frame];
+        [[self paperFoldView] setCenterContentView:centerView];
+    }
     
-    [[self paperFoldView] setCenterContentView:centerView];
-    
-    [[self paperFoldView] setRightFoldContentView:rightView
-                                        foldCount:foldCount
-                                       pullFactor:pullFactor];
-   
     NSLog(@"[DEBUG] frameSizeChanged / origin:(%f,%f) size:(%f,%f)",
           frame.origin.x,
           frame.origin.y,

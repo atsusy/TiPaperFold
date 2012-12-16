@@ -64,7 +64,7 @@ var paperFoldView = module.createPaperFoldView({
 });
 
 window.addEventListener("open", function(e){
-	paperFoldView.state = module.STATE_RIGHT_UNFOLDED;
+	//paperFoldView.state = module.STATE_RIGHT_UNFOLDED;
 });
 
 paperFoldView.addEventListener("stateChanged", function(e){
