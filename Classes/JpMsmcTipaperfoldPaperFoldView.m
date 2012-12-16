@@ -31,12 +31,10 @@
     ENSURE_UI_THREAD_1_ARG(viewProxy);
     ENSURE_SINGLE_ARG(viewProxy, TiViewProxy);
     
-    CGRect r = [[viewProxy view] frame];
+    RELEASE_TO_NIL(leftView);
+    leftView = [[viewProxy view] retain];
     
-    [[self paperFoldView] setLeftFoldContentView:[viewProxy view]];
-    
-    [viewProxy windowWillOpen];
-    
+    [viewProxy windowWillOpen];    
     NSLog(@"[DEBUG] LeftFoldContentView set.");
 }
 
@@ -45,10 +43,10 @@
     ENSURE_UI_THREAD_1_ARG(viewProxy);
     ENSURE_SINGLE_ARG(viewProxy, TiViewProxy);
 
-    [[self paperFoldView] setCenterContentView:[viewProxy view]];
+    RELEASE_TO_NIL(centerView);
+    centerView = [[viewProxy view] retain];
 
     [viewProxy windowWillOpen];
-
     NSLog(@"[DEBUG] CenterContentView set.");
 }
 
@@ -57,28 +55,36 @@
     ENSURE_UI_THREAD_1_ARG(dict);
     ENSURE_SINGLE_ARG(dict, NSDictionary);
 
-    TiViewProxy *contentView = nil;
-    ENSURE_ARG_FOR_KEY(contentView, dict, @"view", TiViewProxy);
+    TiViewProxy *viewProxy = nil;
+    ENSURE_ARG_FOR_KEY(viewProxy, dict, @"view", TiViewProxy);
 
-    NSNumber *foldCount;
-    ENSURE_ARG_OR_NIL_FOR_KEY(foldCount, dict, @"foldCount", NSNumber);
-    if(foldCount == nil)
+    NSNumber *foldCount_;
+    ENSURE_ARG_OR_NIL_FOR_KEY(foldCount_, dict, @"foldCount", NSNumber);
+    if(foldCount_ == nil)
     {
-        foldCount = [NSNumber numberWithInt:3];
+        foldCount = 3;
+    }
+    else
+    {
+        foldCount = [foldCount_ integerValue];
+    
     }
 
-    NSNumber *pullFactor;
-    ENSURE_ARG_OR_NIL_FOR_KEY(pullFactor, dict, @"pullFactor", NSNumber);
-    if(pullFactor == nil)
+    NSNumber *pullFactor_;
+    ENSURE_ARG_OR_NIL_FOR_KEY(pullFactor_, dict, @"pullFactor", NSNumber);
+    if(pullFactor_ == nil)
     {
-        pullFactor = [NSNumber numberWithFloat:0.9];
+        pullFactor = 0.9;
     }
-    [[self paperFoldView] setRightFoldContentView:[contentView view]
-                               rightViewFoldCount:[foldCount integerValue]
-                              rightViewPullFactor:[pullFactor floatValue]];
-
-    [contentView windowWillOpen];
-
+    else
+    {
+        pullFactor = [pullFactor_ floatValue];
+    }
+    
+    RELEASE_TO_NIL(rightView);
+    rightView = [[viewProxy view] retain];
+    
+    [viewProxy windowWillOpen];
     NSLog(@"[DEBUG] RightFoldContentView set.");
 }
 
@@ -115,6 +121,9 @@
 - (void)dealloc
 {
     RELEASE_TO_NIL(paperFoldView);
+    RELEASE_TO_NIL(leftView);
+    RELEASE_TO_NIL(centerView);
+    RELEASE_TO_NIL(rightView);
     [super dealloc];
 }
 
@@ -124,6 +133,21 @@
 - (void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
     [[self paperFoldView] setFrame:frame];
+    
+    [leftView setFrame:CGRectMake(0.0, 0.0, leftView.frame.size.width, frame.size.height)];
+    [centerView setFrame:frame];
+    [rightView setFrame:CGRectMake(0.0, 0.0, rightView.frame.size.width, frame.size.height)];
+
+    [[self paperFoldView] setLeftFoldContentView:leftView
+                                       foldCount:1
+                                      pullFactor:1.0];
+    
+    [[self paperFoldView] setCenterContentView:centerView];
+    
+    [[self paperFoldView] setRightFoldContentView:rightView
+                                        foldCount:foldCount
+                                       pullFactor:pullFactor];
+   
     NSLog(@"[DEBUG] frameSizeChanged / origin:(%f,%f) size:(%f,%f)",
           frame.origin.x,
           frame.origin.y,
