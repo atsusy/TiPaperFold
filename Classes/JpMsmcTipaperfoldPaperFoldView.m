@@ -81,10 +81,22 @@
     ENSURE_UI_THREAD_1_ARG(viewProxy);
     ENSURE_SINGLE_ARG(viewProxy, TiViewProxy);
 
+    if(centerView)
+    {
+        [centerView removeFromSuperview];
+    }    
+    
     RELEASE_TO_NIL(centerView);
     centerView = [[viewProxy view] retain];
 
     [viewProxy windowWillOpen];
+    
+    if(centerView)
+    {
+        [centerView setFrame:self.frame];
+        [[self paperFoldView] setCenterContentView:centerView];
+    }
+    
     NSLog(@"[DEBUG] CenterContentView set.");
 }
 
